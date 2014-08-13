@@ -1,0 +1,29 @@
+{
+  "_id":{"$oid":"000000000000000000000001"},
+  "name":"Taz Jones",
+  "photo":"http://simg.sulekha.com/cartoon-characters-that-kids-love/original700/cartoon-characters-that-kids-love-2011-9-10-3-32-48.jpg",
+  "spouse":{"name":"Dora Jones", "photo": "http://spotonlists.com/wp-content/uploads/2013/01/Dora-the-Explorer1.jpg"},
+  "cash":1000.00,
+  "assets":[{"name": "ring", "photo": "http://upload.wikimedia.org/wikipedia/commons/b/b7/Unico_Anello.png", "value": 10000},{"name":"watch", "photo": "http://static.dezeen.com/uploads/2013/12/S001B-Stock-watch.jpg", "value":50}],
+  "results":{"wins":5, "losses": 3},
+  "isDivorced": false
+}
+{
+  "_id":{"$oid":"000000000000000000000002"},
+  "name":"Dexter Stone",
+  "photo":"http://hamzafiaz.files.wordpress.com/2011/06/8.png",
+  "spouse":{"name":"Tina Stone", "photo": "http://spinoff.comicbookresources.com/wp-content/uploads/2013/01/tina-fey.jpg"},
+  "cash":500.00,
+  "assets":[{"name": "car", "photo": "http://thumbs.dreamstime.com/z/cartoon-car-2197595.jpg", "value": 1000},{"name":"house", "photo": "http://upload.wikimedia.org/wikipedia/commons/thumb/a/af/WhiteHouseSouthFacade.JPG/1280px-WhiteHouseSouthFacade.JPG", "value":1}],
+  "results":{"wins":4, "losses": 2}
+}
+{
+  "_id":{"$oid":"000000000000000000000003"},
+  "name":"Tweety Bird",
+  "photo":"http://upload.wikimedia.org/wikipedia/en/thumb/7/79/Tweety.png/200px-Tweety.png",
+  "spouse":{"name":"Sylvester", "photo": "http://upload.wikimedia.org/wikipedia/en/thumb/8/82/Sylvester_the_Cat.svg/535px-Sylvester_the_Cat.svg.png"},
+  "cash":500.00,
+  "assets":[{"name": "computer", "photo": "http://1.bp.blogspot.com/--J1qRw_jP1E/UEXJKgiwFdI/AAAAAAAAAD0/0kyp5YTOZKE/s1600/Old-Computer+(4).jpg", "value": 40},{"name":"jewelry", "photo": "http://bestclipartblog.com/clipart-pics/jewelry-clip-art-7.jpg", "value": 50}],
+  "results":{"wins":3, "losses": 1}
+}
+
