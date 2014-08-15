@@ -41,10 +41,10 @@ describe('Gambler', function(){
 
   describe('.findById', function(){
     it('should find a gambler by id', function(done){
-      Gambler.findById( '000000000000000000000001', function(gambler){
-         expect(gambler).to.be.instanceof(Gambler);
-         expect(gambler.name).to.equal('Taz Jones');
-         done();
+      Gambler.findById('000000000000000000000001', function(gambler){
+        expect(gambler).to.be.instanceof(Gambler);
+        expect(gambler.name).to.equal('Taz Jones');
+        done();
       });
     });
   });
@@ -62,8 +62,8 @@ describe('Gambler', function(){
         expect(gambler.isDivorced).to.be.true;
         console.log(gambler);
         done();
-        });
       });
-   });
+    });
+  });
 });
 

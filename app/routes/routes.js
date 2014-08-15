@@ -11,7 +11,8 @@ module.exports = function(app, express){
   app.use(bodyParser.urlencoded({extended:true}));
   app.use(methodOverride());
 
-  app.get('/gamblers', derby.all);
+  app.get('/', derby.all);
+  app.delete('/gamblers/:id/assets/:name', derby.destroy);
 
   console.log('Routes Loaded');
 };

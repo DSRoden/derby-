@@ -28,16 +28,31 @@ Gambler.findById = function(id, cb){
 };
 
 Gambler.prototype.removeAsset = function(parameter){
+  if(!this.assets.length){return;}
   var assets = _.remove(this.assets, function(a){ return a.name === parameter;});
   this.cash += assets[0].value;
 
   if(this.assets.length === 0){return this.isDivorced = true;}
-}
+};
+
+Gambler.prototype.save = function(cb){
+  Gambler.collection.save(this, cb);
+};
+
+Gambler.prototype.liquidate = function(name, cb){
+  this.removeAsset(name);
+  var data = {id:this._id.toString(), name:name, cash:this.cash, isDivorced:this.isDivorced};
+  this.save(function(){
+    cb(data);
+  });
+};
+
+
 module.exports = Gambler;
 
 
 
-//Private Helper 
+//Private Helper
 
 function changePrototype(gambler){
   return   _.create(Gambler.prototype, gambler);
